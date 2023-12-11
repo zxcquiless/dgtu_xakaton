@@ -1,0 +1,50 @@
+{% extends 'base.html' %}
+
+<h1>
+    {% if current_language == 'en' %}
+        Here you can leave your email for feedback:
+    {% elif current_language == 'ru' %} 
+        Здесь вы можете оставить свою почту для обратной связи:
+    {% endif %}
+</h1>
+
+{% block form %}
+<div style="max-width: 300px; margin: auto">
+    <form style="max-width: 300px;" method="POST" action="{{ url_for('feedback') }}">
+        <div class="form-group mb-3">
+            <label for="exampleInputEmail1">
+                {% if current_language == 'en' %}
+                    Your email:
+                {% elif current_language == 'ru' %} 
+                    Ваша почта:
+                {% endif %}
+            </label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="mail">
+                <small id="emailHelp" class="form-text text-muted">
+                    {% if current_language == 'en' %}
+                        You will receive a response via email.
+                    {% elif current_language == 'ru' %}
+                        На почту прийдет ответ.
+                    {% endif %}
+                </small>
+        </div>
+        <div class="form-group mb-3">
+            <label for="exampleInputPassword1">
+                {% if current_language == 'en' %}
+                        Your message:
+                    {% elif current_language == 'ru' %}
+                        Ваше сообщение:
+                    {% endif %}
+            </label>
+            <textarea class="form-control" id="exampleInputMessage" rows="5" style="resize: none;" name="text"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary" style="margin-top: 10px;">
+            {% if current_language == 'en' %}
+                Send
+            {% elif current_language == 'ru' %}
+                Отправить
+            {% endif %}
+        </button>
+    </form>
+</div>
+{% endblock %}

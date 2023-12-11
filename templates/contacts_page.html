@@ -1,0 +1,92 @@
+{% extends 'base.html' %}
+
+{% block contacts %}
+<style>
+    /* Ваши пользовательские стили для .container */
+    .container {
+        background-color: #9ea6ad; /* Цвет фона */
+        border-radius: 15px; /* Радиус закругления углов */
+        padding: 20px; /* Внутренний отступ */
+        margin-top: 20px; /* Внешний отступ сверху */
+    }
+</style>
+
+<div class="container mt-5">
+    <h1>
+        {% if current_language == 'en' %}
+        Contact information
+        {% elif current_language == 'ru' %}
+        Контактная информация
+        {% endif %}
+    </h1>
+    
+    <div class="row mt-4">
+        <div class="col-md-6">
+            <h2>
+                {% if current_language == 'en' %}
+                    Adress:
+                {% elif current_language == 'ru' %}    
+                    Адрес:
+                {% endif %}
+            </h2>
+            <p>
+                {% if current_language == 'en' %}
+                    Russia, Rostov region, Taganrog<br>
+                    109 Petrovskaya str., 347904
+                {% elif current_language == 'ru' %}
+                    Россия, Ростовская область, г. Таганрог<br>
+                    ул. Петровская 109-а, 347904
+                {% endif %}
+                </p>
+        </div>
+        <div class="col-md-6">
+            <h2>
+                {% if current_language == 'en' %}
+                    Email:
+                {% elif current_language == 'ru' %}
+                    Электронная почта:
+                {% endif %}
+            </h2>
+            <p> tag.vpo@donstu.ru<br>
+                tag.uchot@donstu.ru</p>
+        </div>
+    </div>
+
+    <div class="row mt-4">
+        <div class="col-md-6">
+            <h2>
+                {% if current_language == 'en' %}
+                    Number:
+                {% elif current_language == 'ru' %}    
+                    Телефон:
+                {% endif %}
+            </h2>
+            <p>
+                {% if current_language == 'en' %}
+                    Dean's Office/ academic department<br>
+                    Phone: (8634) 62-34-14
+                {% elif current_language == 'ru' %} 
+                    Деканат/ учебная часть<br>
+                    тел.: (8634) 62-34-14
+                {% endif %}
+                </p>
+        </div>
+        <div class="col-md-6">
+            <h2>
+                {% if current_language == 'en' %}
+                    Work time:
+                {% elif current_language == 'ru' %}     
+                    Время работы:
+                {% endif %}
+            </h2>
+            <p>
+                {% if current_language == 'en' %}
+                    Monday — Saturday. 8:30 — 17:00
+                {% elif current_language == 'ru' %} 
+                    Понедельник — Суббота. 8:30 — 17:00
+                {% endif %}
+            </p>
+        </div>
+    </div>
+</div>
+{% endblock %}

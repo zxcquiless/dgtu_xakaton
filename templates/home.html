@@ -1,0 +1,62 @@
+{% extends 'base.html' %}
+
+{% block home %}
+<div class="container mt-5">
+    <div class="card border border-primary">
+        <div class="card-body">
+            <h5 class="card-title">
+                {% if current_language == 'en' %}                 
+                    University name:
+                {% elif current_language == 'ru' %} 
+                    Название университета:
+                {% endif %}
+            </h5>
+            <p class="card-text">
+                {% if current_language == 'en' %}
+                    Don State Technical University (DSTU) in Taganrog.
+                {% elif current_language == 'ru' %} 
+                    Донской государственный технический университет (ДГТУ) в Таганроге.
+                {% endif %}
+            </p>
+
+            <h5 class="card-title">
+                {% if current_language == 'en' %}
+                    Mission:
+                {% elif current_language == 'ru' %}
+                    Миссия:
+                {% endif %}
+            </h5>
+            <p class="card-text">
+                {% if current_language == 'en' %}
+                    The mission of the university is usually based on providing high-quality higher technical education, scientific research, innovative development and training of highly qualified specialists in the field of engineering and technology.
+                {% elif current_language == 'ru' %}
+                    В основе миссии университета обычно лежит обеспечение качественного высшего технического образования, научных исследований, инновационного развития и подготовка высококвалифицированных специалистов в области техники и технологии.
+                {% endif %}
+            </p>
+
+            <h5 class="card-title">
+                {% if current_language == 'en' %}
+                    Short description:
+                {% elif current_language == 'ru' %}
+                    Краткое описание:
+                {% endif %}
+            </h5>
+            <p class="card-text">
+                {% if current_language == 'en' %}
+                    Don State Technical University has a long history and is one of the key technical universities in Russia. The university offers a wide range of higher education programs in engineering, technology, information technology and other technical sciences. In addition, DSTU actively participates in scientific research, innovative projects and interaction with industrial partners.
+                {% elif current_language == 'ru' %}
+                    Донской государственный технический университет имеет долгую историю и является одним из ключевых технических университетов в России. Университет предлагает широкий спектр программ высшего образования в области инженерии, техники, информационных технологий и других технических наук. Кроме того, ДГТУ активно участвует в научных исследованиях, инновационных проектах и взаимодействии с промышленными партнерами.
+                {% endif %}
+            </p>
+
+            <p class="card-text">
+                {% if current_language == 'en' %}
+                    The university generally strives to develop students not only academically, but also culturally and socially. It can provide students with access to state-of-the-art research laboratories, libraries, sports facilities and other resources.
+                {% elif current_language == 'ru' %}
+                    Университет обычно стремится к развитию студентов не только в академическом, но и в культурном и социальном плане. Он может предоставлять студентам доступ к современным исследовательским лабораториям, библиотекам, спортивным сооружениям и другим ресурсам.
+                {% endif %}
+            </p>
+        </div>
+    </div>
+</div>
+{% endblock %}

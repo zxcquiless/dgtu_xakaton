@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+
+{% block schedule %}
+<div class="container my-5">
+    <h2 class="text-center mb-4">
+        {% if current_language == 'en' %}
+            Schedule
+        {% elif current_language == 'ru' %}     
+            Расписание
+        {% endif %}
+    </h2>
+
+    <div class="row">
+        <div class="col-md-4 mb-4">
+            <div class="card border border-primary">
+                <img src="https://media.discordapp.net/attachments/1045693440253513788/1183565368934027284/image.png?ex=6588cc25&is=65765725&hm=dc9c4970dc942b7b2681b4f81286cf250cda6bb06325110bdd30a4067ebb3ff0&=&format=webp&quality=lossless" class="card-img-top" alt="Photo 1">
+            </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+            <div class="card border border-primary">
+                <img src="https://media.discordapp.net/attachments/1045693440253513788/1183565530951594004/image.png?ex=6588cc4c&is=6576574c&hm=f667fd585b904568fc22dd962a0dd06fc1e683d954c10c143205aee15d543aea&=&format=webp&quality=lossless" class="card-img-top" alt="Photo 2">
+            </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+            <div class="card border border-primary">
+                <img src="https://media.discordapp.net/attachments/1045693440253513788/1183565651026133184/image.png?ex=6588cc68&is=65765768&hm=ffd874003de2debd4e40409dd1b9ebb2f13c336719ce213f1d0dfe84306c1abe&=&format=webp&quality=lossless" class="card-img-top" alt="Photo 3">
+            </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+            <div class="card border border-primary">
+                <img src="https://media.discordapp.net/attachments/1045693440253513788/1183565776481959946/image.png?ex=6588cc86&is=65765786&hm=3579c4bbae1a2c14c1bd460e0ec91127739f7aeda82908115d209ad8b215ec63&=&format=webp&quality=lossless" class="card-img-top" alt="Photo 4">
+            </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+            <div class="card border border-primary">
+                <img src="https://media.discordapp.net/attachments/1045693440253513788/1183565859524980849/image.png?ex=6588cc9a&is=6576579a&hm=7bb95cf74bc1e4058ea0bf65acd496c706f60e6464003f9159691bb42aec6e30&=&format=webp&quality=lossless" class="card-img-top" alt="Photo 5">
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

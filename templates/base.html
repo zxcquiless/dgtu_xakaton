@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+<html lang="{{ current_language }}">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <title>{% block title %}Donstu-info{% endblock %}</title>
+</head>
+
+<body>
+    <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
+        <div class="col-md-3 mb-2 mb-md-0">
+            <a href="/" class="d-inline-flex link-body-emphasis text-decoration-none">
+                <svg class="bi" width="40" height="32" role="img" aria-label="Bootstrap">
+                    <!-- Ваш код для SVG-иконки Bootstrap -->
+                </svg>
+            </a>
+        </div>
+    
+        <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+            <li><a href="/" class="nav-link px-2 {% if current_page == '/' %}active{% endif %} text-primary">
+                {% if current_language == 'en' %}
+                    Main page
+                {% elif current_language == 'ru' %}
+                    Главная страница
+                {% endif %}
+            </a></li>
+            <li><a href="/contacts" class="nav-link px-2 {% if current_page == '/contacts' %}active{% endif %} text-primary">
+                {% if current_language == 'en' %}
+                    Contacts
+                {% elif current_language == 'ru' %}
+                    Контакты
+                {% endif %}
+            </a></li>
+            <li><a href="/interactive_map" class="nav-link px-2 {% if current_page == '/interactive_map' %}active{% endif %} text-primary">
+                {% if current_language == 'en' %}
+                    Interactive map
+                {% elif current_language == 'ru' %}
+                    Интерактивная карта
+                {% endif %}
+            </a></li>
+            <li><a href="/feedback" class="nav-link px-2 {% if current_page == '/feedback' %}active{% endif %} text-primary">
+                {% if current_language == 'en' %}
+                    Feedback
+                {% elif current_language == 'ru' %}
+                    Обратная связь
+                {% endif %}
+            </a></li>
+            <li><a href="/schedule" class="nav-link px-2 {% if current_page == '/schedule' %}active{% endif %} text-primary">
+                {% if current_language == 'en' %}
+                    Schedule
+                {% elif current_language == 'ru' %}
+                    Расписание
+                {% endif %}
+            </a></li>
+        </ul>
+    </header>   
+    {% block content %}{% endblock %}
+    {% block form %}{% endblock %}
+    {% block contacts %}{% endblock %}
+    {% block photo%}{% endblock %}
+    {% block schedule %}{% endblock %}
+    {% block admin %}{% endblock %}
+    {% block home%}{% endblock %}
+    <form action="{{ url_for('change_language') }}" method="post">
+        <button type="submit" class="btn btn-primary rounded-circle position-fixed bottom-0 right-0 m-3">
+            {% if current_language == 'ru' %}
+                EN
+            {% else %}
+                RU
+            {% endif %}
+        </button>
+    </form>
+</body>
+</html>

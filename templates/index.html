@@ -1,0 +1,505 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container my-5">
+  <a href="/home" class="text-decoration-none text-body-emphasis">
+    <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg">
+        <div class="col-lg-7 p-3 p-lg-5 pt-lg-3">
+            <h1 class="display-4 fw-bold lh-1">
+              {% if current_language == 'en' %}
+                DSTU branch in Taganrog
+              {% elif current_language == 'ru' %}
+                Филиал ДГТУ в г. Таганрог
+              {% endif %}
+            </h1>
+            <p class="lead">
+              {% if current_language == 'en' %}
+              We are a dynamically developing educational center, part of the leading technical university in the region. Our branch provides high-quality education focused on the needs of the modern industry and provides students with excellent opportunities for growth and development.
+              {% elif current_language == 'ru' %}
+              Мы – динамично развивающийся учебный центр, входящий в состав ведущего технического университета региона. Наш филиал осуществляет высококачественное образование, ориентированное на потребности современной индустрии и обеспечивает студентам отличные возможности для роста и развития.
+              {% endif %}
+            </p>
+        </div>
+        <div class="col-lg-4 offset-lg-1 p-0 overflow-hidden shadow-lg">
+            <img class="rounded-lg-3" src="https://media.discordapp.net/attachments/1045693440253513788/1183176421313609859/msedge_Wcv4gHti6e.png?ex=658761e9&is=6574ece9&hm=591b85c496483da5e7a8060adcf80de5f15d07ada1ce91cbd31c54b7df1405cd&=&format=webp&quality=lossless" alt="" width="460">
+        </div>
+    </div>
+  </a>
+</div>
+<div>
+
+<div class="container-fluid bg-primary text-white" style="height: 80px;">
+  <div class="row" style="height: 100%;">
+      <div class="col-md-12 my-auto">
+      </div>
+    </div>
+</div>
+  
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  
+</div>
+
+<div class="container my-5">
+  <div class="row">
+    <div class="col-md-6">
+        <h1 class="display-4">
+          {% if current_language == 'en' %}
+            Information about admission
+          {% elif current_language == 'ru' %}
+            Информация о поступлении
+          {% endif %}
+        </h1>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+      <div class="col-md-4">
+          <h2>
+            {% if current_language == 'en' %}
+              The documents required for admission are submitted in one of the following ways:
+            {% elif current_language == 'ru' %}
+              Документы, необходимые для поступления, представляются одним из способов:
+            {% endif %}
+          </h2>
+          <p>
+            {% if current_language == 'en' %}
+              1) personally enrolled at the location of the Institute (Taganrog, Petrovskaya str., 109a);<br>
+              2) online via your personal account (https://online.donstu.ru /);<br>
+              3) through postal operators.
+            {% elif current_language == 'ru' %}
+              1) лично поступающим по местонахождению института (г. Таганрог, ул. Петровская, 109а);<br>
+              2) онлайн посредством личного кабинета (https://online.donstu.ru/);<br>
+              3) через операторов почтовой связи.
+            {% endif %}
+          </p>
+      </div>
+      <div class="col-md-4">
+          <h2>
+            {% if current_language == 'en' %}
+              List of required documents:
+            {% elif current_language == 'ru' %}
+              Перечень необходимых документов:
+            {% endif %}
+          </h2>
+          <p>
+            {% if current_language == 'en' %}
+              ▫ Identity document (passport);<br>
+              ▫ Insurance certificate of compulsory pension insurance (SNILS);<br>
+              ▫️ Document of education (certificate/diploma + application);<br>
+              ▫ Individual achievements;<br>
+              ▫️ Medical certificate in form 086-U.
+            {% elif current_language == 'ru' %}
+              ▫️ Документ, удостоверяющий личность (паспорт);<br>
+              ▫️ Страховое свидетельство обязательного пенсионного страхования (СНИЛС);<br>
+              ▫️ Документ об образовании (аттестат/диплом + приложением);<br>
+              ▫️ Индивидуальные достижения;<br>
+              ▫️ Медицинская справка по форме 086-У.
+            {% endif %}
+          </p>
+      </div>
+      <div class="col-md-4">
+          <h2>
+            {% if current_language == 'en' %}
+              For more information, please contact:
+            {% elif current_language == 'ru' %}
+              Для получения более подробной информации обращаться:
+            {% endif %}
+          </h2>
+          <p>
+            {% if current_language == 'en' %}
+              Address: Taganrog, Petrovskaya str., 109-a, auditorium 110
+              Opening hours: Mon. to Fri. from 9:00 to 17:00
+              Sat. from 9:00 to 14:00
+              Phone: 8 (8634) 62-35-38.
+            {% elif current_language == 'ru' %}
+              Адрес: г.Таганрог, ул. Петровская, 109-а, аудитория 110<br>
+              Время работы: пн. по пт. с 9:00 до 17:00<br>
+              Сб. с 9:00 до 14:00<br>
+              Телефон: 8 (8634) 62-35-38.
+            {% endif %}
+          </p>
+      </div>
+  </div>
+</div>
+
+<div class="container-fluid bg-primary text-white" style="height: 80px;">
+  <div class="row" style="height: 100%;">
+      <div class="col-md-12 my-auto">
+      </div>
+    </div>
+</div>
+
+<div class="container mt-5">
+  <div class="jumbotron">
+      <h1 class="display-4">
+        {% if current_language == 'en' %}
+          Section with clubs and student organizations
+        {% elif current_language == 'ru' %}
+          Раздел с клубами и студенческими организациями
+        {% endif %}
+      </h1>
+      <hr class="my-4">
+  </div>
+</div>
+
+<div class="container my-5">
+  <div class="card mb-4 border border-primary">
+      <div class="card-body">
+          <h5 class="card-title">
+            {% if current_language == 'en' %}
+              Basketball
+            {% elif current_language == 'ru' %}
+              Баскетбол
+            {% endif %}
+          </h5>
+          <p class="card-text">
+            {% if current_language == 'en' %}
+            The basketball club is an exciting playground for students, where they gather for intensive training, improving basketball skills, participating in competitions and developing a strong team spirit. It is a place where students not only improve their athletic skills, but also find inspiration, motivation and friendship in a college sports environment.
+            {% elif current_language == 'ru' %}
+             Баскетбольный кружок представляет собой захватывающую площадку для студентов, где они собираются для интенсивных тренировок, улучшения навыков игры в баскетбол, участия в соревнованиях и развития сильного командного духа. Это место, где студенты не только совершенствуют свои спортивные навыки, но и находят вдохновение, мотивацию и дружбу в спортивной обстановке колледжа.
+            {% endif %}
+          </p>
+      </div>
+  </div>
+</div>
+
+<div class="container my-5">
+  <div class="card mb-4 border border-primary">
+      <div class="card-body">
+          <h5 class="card-title">
+            {% if current_language == 'en' %}
+              Volleyball
+            {% elif current_language == 'ru' %}
+              Волейбол
+            {% endif %}
+          </h5>
+          <p class="card-text">
+            {% if current_language == 'en' %}
+              The Volleyball Club is an energetic and dynamic environment for students, where they gather to develop their volleyball skills, conduct intensive training, participate in competitions and strengthen team ties. It is a place where students not only improve their playing technique, but also find support, collaboration and a sporting passion that unites them in an exciting and competitive college atmosphere.
+            {% elif current_language == 'ru' %}
+              Волейбольный кружок представляет собой энергичную и динамичную среду для студентов, где они собираются, чтобы развивать свои навыки в волейболе, проводить интенсивные тренировки, участвовать в соревнованиях и укреплять связи в команде. Это место, где студенты не только совершенствуют свою технику игры, но также находят поддержку, сотрудничество и спортивную страсть, объединяющие их в увлекательной и соревновательной атмосфере колледжа.
+            {% endif %}
+          </p>
+      </div>
+  </div>
+</div>
+
+<div class="container my-5">
+  <div class="card mb-4 border border-primary">
+    <div class="card-body">
+        <h5 class="card-title">
+          {% if current_language == 'en' %}
+            Table tennis
+          {% elif current_language == 'ru' %}
+            Настольный теннис
+          {% endif %}
+        </h5>
+        <p class="card-text">
+          {% if current_language == 'en' %}
+            The table tennis Club is a place where students gather to play exciting and fast sports. Here they improve their technical skills, spend time in active competition and develop strategic thinking. This circle contributes not only to the improvement of game technology, but also to the formation of a friendly atmosphere, stimulating interaction and fun competitions between participants.
+          {% elif current_language == 'ru' %}
+            Кружок настольного тенниса - это место, где студенты собираются для игры в увлекательный и быстрый спорт. Здесь они улучшают свои технические навыки, проводят время в активном соревновании и развивают стратегическое мышление. Этот кружок способствует не только улучшению игровой техники, но и формированию дружеской атмосферы, стимулируя взаимодействие и веселые состязания между участниками.
+          {% endif %}
+        </p>
+    </div>
+  </div>
+</div>
+
+<div class="container my-5">
+  <div class="card mb-4 border border-primary">
+    <div class="card-body">
+        <h5 class="card-title">
+          {% if current_language == 'en' %}
+            Vocals
+          {% elif current_language == 'ru' %}
+            Вокал
+          {% endif %}
+        </h5>
+        <p class="card-text">
+          {% if current_language == 'en' %}
+            The Vocal Circle is a platform where students develop their vocal talent, improve their singing technique and express their musical abilities. Here they engage in voice training, study various musical genres, prepare for performances and create musical works in a friendly and supportive environment. The vocal club at the college also promotes the development of self-expression, confidence and artistic skills of the participants.
+          {% elif current_language == 'ru' %}
+            Вокальный кружок - это площадка, где студенты развивают свой вокальный талант, улучшают технику пения и выражают свои музыкальные способности. Здесь они занимаются голосовым тренингом, изучают различные музыкальные жанры, готовятся к выступлениям и создают музыкальные произведения в дружной и поддерживающей обстановке. Кружок вокала в колледже также способствует развитию самовыражения, уверенности и артистических навыков участников.
+          {% endif %}
+        </p>
+    </div>
+  </div>
+</div>
+
+<div class="container my-5">
+  <div class="card mb-4 border border-primary">
+    <div class="card-body">
+        <h5 class="card-title">
+          {% if current_language == 'en' %}
+            KVN
+          {% elif current_language == 'ru' %}
+            КВН
+          {% endif %}
+        </h5>
+        <p class="card-text">
+          {% if current_language == 'en' %}
+            The KVN Club (The Club of the Cheerful and Resourceful) is a platform for students to develop a sense of humor, creativity and creativity. Participants prepare and perform humorous routines, sketches, stand-ups and stage games, competing with other teams or participants. The KVN club in college promotes the development of wit, communication skills and the ability to react quickly to events, bringing fun and a positive mood to both participants and viewers.
+          {% elif current_language == 'ru' %}
+            Кружок КВН (Клуб Весёлых и Находчивых) - это площадка для студентов, где развивается чувство юмора, креативность и творческие способности. Участники готовят и исполняют юмористические номера, скетчи, стэндапы и игры на сцене, соревнуясь с другими командами или участниками. Кружок КВН в колледже способствует развитию остроумия, коммуникационных навыков и способности быстро реагировать на события, принося веселье и позитивное настроение как участникам, так и зрителям.
+          {% endif %}
+        </p>
+    </div>
+  </div>
+</div>
+
+<div class="container my-5">
+  <div class="card mb-4 border border-primary">
+    <div class="card-body">
+        <h5 class="card-title">
+          {% if current_language == 'en' %}
+            Chess
+          {% elif current_language == 'ru' %}
+            Шахматы
+          {% endif %}
+        </h5>
+        <p class="card-text">
+          {% if current_language == 'en' %}
+            The Chess Club is a place where students exchange strategies, improve their chess skills and develop their mental potential. Participants here learn to play chess, conduct practical classes, participate in tournaments and competitions both inside and outside the college. The chess club promotes the development of logical thinking, concentration of attention and the ability to make strategic decisions, creating an intellectually stimulating environment for participants.
+          {% elif current_language == 'ru' %}
+            Шахматный клуб - это место, где студенты обмениваются стратегиями, улучшают свои шахматные навыки и развивают свой умственный потенциал. Участники здесь учатся играть в шахматы, проводят практические занятия, участвуют в турнирах и соревнованиях как внутри, так и за пределами колледжа. Шахматный клуб способствует развитию логического мышления, концентрации внимания и способности принимать стратегические решения, создавая интеллектуально стимулирующую среду для участников.
+          {% endif %}
+        </p>
+    </div>
+  </div>
+</div>
+
+<div class="container my-5">
+  <div class="card mb-4 border border-primary">
+    <div class="card-body">
+        <h5 class="card-title">
+          {% if current_language == 'en' %}
+            Self-defense
+          {% elif current_language == 'ru' %}
+            Самооборона
+          {% endif %}
+        </h5>
+        <p class="card-text">
+          {% if current_language == 'en' %}
+            The Self-Defense Club is a platform where students can learn various methods of defense and self-defense. The club provides classes on self-defense techniques, the basics of martial arts or special training to raise awareness of personal safety. Participants have the opportunity to learn skills that can be useful in real-world situations, as well as develop confidence and awareness in the context of personal safety.
+          {% elif current_language == 'ru' %}
+            Клуб самообороны - это платформа, где студенты могут изучать различные методы защиты и самообороны. В рамках клуба проводятся занятия по техникам самозащиты, основам боевых искусств или специальным тренировкам для повышения осведомленности о личной безопасности. Участники имеют возможность освоить умения, которые могут быть полезными в реальных ситуациях, а также развивают уверенность и осознанность в контексте личной безопасности.
+          {% endif %}
+        </p>
+    </div>
+  </div>
+</div>
+
+<div class="container my-5">
+  <div class="card mb-4 border border-primary">
+    <div class="card-body">
+        <h5 class="card-title">
+          {% if current_language == 'en' %}
+            Information Systems Club
+          {% elif current_language == 'ru' %}
+            Клуб информационных систем
+          {% endif %}
+        </h5>
+        <p class="card-text">
+          {% if current_language == 'en' %}
+            The Information Systems Club is an environment where students study, discuss and apply concepts, technologies and methods of information systems management. Club members study the latest trends in the field of IT, share knowledge about software, databases, information security and other aspects of modern information technology. In addition, the club provides an opportunity for the practical application of acquired knowledge through the creation of projects or participation in competitions, contributing to the development of professional skills of participants in the field of information systems
+          {% elif current_language == 'ru' %}
+            Клуб информационных систем - это среда, где студенты изучают, обсуждают и применяют концепции, технологии и методы управления информационными системами. Члены клуба изучают последние тенденции в области IT, обмениваются знаниями о программном обеспечении, базах данных, информационной безопасности и других аспектах современных информационных технологий. Кроме того, клуб предоставляет возможность для практического применения полученных знаний через создание проектов или участие в соревнованиях, способствуя развитию профессиональных навыков участников в области информационных систем
+          {% endif %}
+        </p>
+    </div>
+  </div>
+</div>
+
+<div class="container my-5">
+  <div class="card mb-4 border border-primary">
+    <div class="card-body">
+        <h5 class="card-title">
+          {% if current_language == 'en' %}
+            The club culture of speech and the image of a modern lawyer
+          {% elif current_language == 'ru' %}
+            Клуб культура речи и имидж современного юриста
+          {% endif %}
+        </h5>
+        <p class="card-text">
+          {% if current_language == 'en' %}
+            The Speech Culture and Image of a Modern Lawyer Club at the college is a platform where students study and develop effective communication skills, improve speech culture and form a professional image of a future lawyer. Within the framework of the club, classes are held on public speaking, correct presentation of speeches, argumentation and persuasion skills. Participants also get acquainted with the ethics of behavior in the field of law, the conscious use of image and appearance. The club promotes the formation of students with a set of skills necessary for a successful career in the field of law, including not only knowledge of the law, but also the ability to convincingly and clearly express their thoughts and maintain a professional appearance.
+          {% elif current_language == 'ru' %}
+            Клуб 'Культура речи и имидж современного юриста' в колледже представляет собой площадку, где студенты изучают и развивают навыки эффективного общения, улучшают культуру речи и формируют профессиональный имидж будущего юриста. В рамках клуба проводятся занятия по ораторскому мастерству, правильному оформлению выступлений, навыкам аргументации и убеждения. Также участники знакомятся с этикой поведения в сфере юриспруденции, осознанным использованием образа и внешнего вида. Клуб способствует формированию у студентов комплекса навыков, необходимых для успешной карьеры в сфере права, включая не только знание законов, но и умение убедительно и четко выражать свои мысли и поддерживать профессиональный облик.
+          {% endif %}
+        </p>
+    </div>
+  </div>
+</div>
+
+<div class="container my-5">
+  <div class="card mb-4 border border-primary">
+    <div class="card-body">
+        <h5 class="card-title">
+          {% if current_language == 'en' %}
+            Administrative law
+          {% elif current_language == 'ru' %}
+            Административное право
+          {% endif %}
+        </h5>
+        <p class="card-text">
+          {% if current_language == 'en' %}
+            The Administrative Law Club is an organization where students deepen their knowledge in the field of administrative law. Club members study the basic principles and norms governing the activities of government agencies, as well as the application of administrative legislation in practical situations. The club hosts discussions, seminars, case studies and other events aimed at discussing current problems and trends in the field of administrative law. Participation in the club allows students to expand their knowledge, analytical skills and better understand the basics of the legal system in the field of public administration.
+          {% elif current_language == 'ru' %}
+            Клуб по административному праву представляет собой организацию, где студенты углубляют свои знания в области административного права. Члены клуба изучают основные принципы и нормы, регулирующие деятельность государственных органов, а также применение административного законодательства в практических ситуациях. В рамках клуба проводятся дискуссии, семинары, кейс-стади и другие мероприятия, направленные на обсуждение актуальных проблем и тенденций в области административного права. Участие в клубе позволяет студентам расширить свои знания, аналитические навыки и лучше понять основы правовой системы в сфере государственного управления.
+          {% endif %}
+        </p>
+    </div>
+  </div>
+</div>
+
+<div class="container my-5">
+  <div class="card mb-4 border border-primary">
+    <div class="card-body">
+        <h5 class="card-title">
+          {% if current_language == 'en' %}
+            A young criminologist
+          {% elif current_language == 'ru' %}
+            Юный криминалист
+          {% endif %}
+        </h5>
+        <p class="card-text">
+          {% if current_language == 'en' %}
+            The Young Criminologist Club at the college provides students with the opportunity to immerse themselves in the world of litigation, criminology and law enforcement. Club members study crime investigation methods, the basics of forensic examination, collect and analyze evidence, and consider various aspects of the law enforcement system. The aim of the club is not only to expand theoretical knowledge in the field of criminology, but also to create conditions for the practical application of acquired knowledge through participation in simulations of crime investigation or trials. This provides students with the opportunity to understand the basics of working in law enforcement and the judicial system, as well as develop critical thinking and analytical skills in the field of criminal law.
+          {% elif current_language == 'ru' %}
+            Клуб 'Юный криминалист' в колледже предоставляет студентам возможность погрузиться в мир судебного процесса, криминалистики и правопорядка. Участники клуба изучают методы расследования преступлений, основы судебной экспертизы, собирают и анализируют улики, рассматривают различные аспекты правоприменительной системы. Целью клуба является не только расширение теоретических знаний в области криминалистики, но и создание условий для практического применения полученных знаний через участие в симуляциях расследования преступлений или судебных процессов. Это предоставляет студентам возможность понять основы работы в правоохранительных органах и судебной системе, а также развить критическое мышление и навыки анализа в области уголовного права.
+          {% endif %}
+        </p>
+    </div>
+  </div>
+</div>
+
+<div class="container my-5">
+  <div class="card mb-4 border border-primary">
+    <div class="card-body">
+        <h5 class="card-title">
+          {% if current_language == 'en' %}
+            Consumer Protection Club
+          {% elif current_language == 'ru' %}
+            Клуб защита прав потребителя
+          {% endif %}
+        </h5>
+        <p class="card-text">
+          {% if current_language == 'en' %}
+            The Consumer Protection Club is an initiative aimed at studying and understanding the basic principles and mechanisms of consumer protection. Club members study the laws governing the rights and obligations of consumers, as well as master methods of protecting their rights in the field of consumer relations. The club hosts educational events, seminars, discussions and case studies, which discuss the quality of goods and services, proper advertising, as well as ways to resolve conflicts between consumers and sellers. Participation in the club allows students to use their rights as consumers more consciously, increases their legal literacy and contributes to the formation of a responsible attitude to shopping and consumption
+          {% elif current_language == 'ru' %}
+            Клуб по защите прав потребителей - это инициатива, направленная на изучение и понимание основных принципов и механизмов защиты прав потребителей. Участники клуба изучают законы, регулирующие права и обязанности потребителей, а также осваивают методы защиты своих прав в сфере потребительских отношений. В рамках клуба проводятся образовательные мероприятия, семинары, дискуссии и кейс-стади, на которых обсуждаются вопросы качества товаров и услуг, правильного ведения рекламы, а также способы разрешения конфликтов между потребителями и продавцами. Участие в клубе позволяет студентам более осознанно использовать свои права как потребителей, повышает их правовую грамотность и способствует формированию ответственного отношения к покупкам и потреблению
+          {% endif %}
+        </p>
+    </div>
+  </div>
+</div>
+
+<div class="container my-5">
+  <div class="card mb-4 border border-primary">
+    <div class="card-body">
+        <h5 class="card-title">
+          {% if current_language == 'en' %}
+            The legal diagonal
+          {% elif current_language == 'ru' %}
+            Юридическая диагональ
+          {% endif %}
+        </h5>
+        <p class="card-text">
+          {% if current_language == 'en' %}
+            The Legal Diagonal Circle is an initiative at the college that unites students interested in law and legal aspects. The purpose of the circle may be to study various legal fields, conduct educational events, discussions and debates on topical legal issues. In addition, such a circle can contribute to the formation of skills in analyzing legislation, preparing for competitions or events in the field of law, as well as the exchange of experience between participants in order to expand legal knowledge and skills.
+          {% elif current_language == 'ru' %}
+            Кружок 'Юридическая Диагональ' - это инициатива в колледже, объединяющая студентов, интересующихся юриспруденцией и правовыми аспектами. Целью кружка может быть изучение различных правовых областей, проведение образовательных мероприятий, дискуссий и дебатов по актуальным юридическим вопросам. Кроме того, такой кружок может способствовать формированию навыков анализа законодательства, подготовке к конкурсам или мероприятиям в области права, а также обмену опытом между участниками с целью расширения юридических знаний и навыков.
+          {% endif %}
+        </p>
+    </div>
+  </div>
+</div>
+
+<div class="container my-5">
+  <div class="card mb-4 border border-primary">
+    <div class="card-body">
+        <h5 class="card-title">
+          {% if current_language == 'en' %}
+            Lyra
+          {% elif current_language == 'ru' %}
+            Лира
+          {% endif %}
+        </h5>
+        <p class="card-text">
+          {% if current_language == 'en' %}
+            The Lyra Circle is a platform for students who are passionate about music and art. Within the framework of this circle, events dedicated to musical creativity are held: concerts, musical evenings, master classes, as well as practical classes on playing musical instruments or vocals. The participants of the Lyra circle have the opportunity to develop their musical abilities, share experiences and enjoy communication in a creative atmosphere.
+          {% elif current_language == 'ru' %}
+            Кружок 'Лира' - это площадка для студентов, увлеченных музыкой и искусством. В рамках этого кружка проводятся мероприятия, посвященные музыкальному творчеству: концерты, музыкальные вечера, мастер-классы, а также практические занятия по игре на музыкальных инструментах или вокалу. Участники кружка 'Лира' имеют возможность развивать свои музыкальные способности, обмениваться опытом и наслаждаться общением в творческой атмосфере.
+          {% endif %}
+        </p>
+    </div>
+  </div>
+</div>
+
+<div class="container my-5">
+  <div class="card mb-4 border border-primary">
+    <div class="card-body">
+        <h5 class="card-title">
+          {% if current_language == 'en' %}
+            Business English
+          {% elif current_language == 'ru' %}
+            Business English
+          {% endif %}
+        </h5>
+        <p class="card-text">
+          {% if current_language == 'en' %}
+            Business English is an area of English language learning focused on specialized communication skills used in business and professional environments. Business English courses usually cover topics related to business correspondence, presentations, oral and written communications, business communication, telephone conversations, terminology in various business areas and other aspects necessary for successful business relations in English. This type of training is aimed at preparing students to use English in the professional field and international business.
+          {% elif current_language == 'ru' %}
+            Business English (деловой английский) - это область изучения английского языка, сосредоточенная на специализированных навыках коммуникации, используемых в бизнесе и профессиональной среде. Курсы по Business English обычно охватывают темы, связанные с деловой перепиской, проведением презентаций, устными и письменными коммуникациями, деловым общением, телефонными разговорами, терминологией в различных сферах бизнеса и другими аспектами, необходимыми для успешного ведения деловых отношений на английском языке. Этот вид обучения направлен на подготовку студентов к использованию английского языка в профессиональной сфере и международном бизнесе.
+          {% endif %}
+        </p>
+    </div>
+  </div>
+</div>
+
+<div class="container my-5">
+  <div class="card mb-4 border border-primary">
+    <div class="card-body">
+        <h5 class="card-title">
+          {% if current_language == 'en' %}
+            Draftsman
+          {% elif current_language == 'ru' %}
+            Чертежник
+          {% endif %}
+        </h5>
+        <p class="card-text">
+          {% if current_language == 'en' %}
+            The Draftsman's Circle is a place where students delve into the study of technical drawing and the creation of drawings. The participants of the circle study the basics of graphics, drawing, principles of computer modeling and working with programs for creating technical drawings (for example, AutoCAD). Practical classes are held within the circle, where students can create their own drawings, study the principles of construction and detailing of various objects and structures. The Draftsman circle is aimed at developing professional skills in the field of drawing and preparing students for the practical use of this skill in professional activities.
+          {% elif current_language == 'ru' %}
+            Кружок Чертежник - это место, где студенты углубляются в изучение технического черчения и создания чертежей. Участники кружка изучают основы графики, черчения, принципы компьютерного моделирования и работы с программами для создания технических чертежей (например, AutoCAD). В рамках кружка проводятся практические занятия, на которых студенты могут создавать свои собственные чертежи, изучать принципы построения и детализации различных объектов и конструкций. Кружок 'Чертежник' направлен на развитие профессиональных навыков в области черчения и подготовку студентов к практическому использованию этого навыка в профессиональной деятельности.
+          {% endif %}
+        </p>
+    </div>
+  </div>
+</div>
+
+<div class="container my-5">
+  <div class="card mb-4 border border-primary">
+    <div class="card-body">
+        <h5 class="card-title">
+          {% if current_language == 'en' %}
+            Center for Military-patriotic Education
+          {% elif current_language == 'ru' %}
+            Центр военно-патриотического воспитания
+          {% endif %}
+        </h5>
+        <p class="card-text">
+          {% if current_language == 'en' %}
+            The Center for Military Patriotic Education club is a platform where students have the opportunity to deepen their knowledge of military history, national traditions, ideals of patriotism and civic responsibility. Various events are held within the circle: from lectures and seminars on the history of the country and military equipment to training in military applied skills. The circle promotes civic engagement, respect for the history of their country and cultural values, and prepares students for a conscious civic position.
+          {% elif current_language == 'ru' %}
+            Кружок 'Центр военно-патриотического воспитания' представляет собой платформу, где студенты имеют возможность углубить свои знания о военной истории, национальных традициях, идеалах патриотизма и гражданской ответственности. В рамках кружка проводятся различные мероприятия: от лекций и семинаров по истории страны и военной технике до тренировок по военно-прикладным навыкам. Кружок способствует формированию гражданской активности, уважения к истории своей страны и культурным ценностям, а также подготавливает студентов к осознанной гражданской позиции.
+          {% endif %}
+        </p>
+    </div>
+  </div>
+</div>
+{% endblock%}

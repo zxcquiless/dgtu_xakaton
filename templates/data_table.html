@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+
+{% block admin %}
+  <h1>Data Table</h1>
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">ID</th>
+        <th scope="col">Message</th>
+        <th scope="col">Email</th>
+        <th scope="col">Actions</th>  <!-- Добавлен новый заголовок для кнопок действий -->
+      </tr>
+    </thead>
+    <tbody>
+      {% for item in data %}
+        <tr>
+          <th scope="row">{{ item.id }}</th>
+          <td>{{ item.message }}</td>
+          <td>{{ item.email }}</td>
+          <td>
+            <form method="POST" action="{{ url_for('delete_item', id=item.id) }}">
+              <button type="submit" class="btn btn-danger">Delete</button>
+            </form>
+          </td>
+        </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+{% endblock %}
+
+{% with messages = get_flashed_messages(with_categories=true) %}
+    {% if messages %}
+        {% for category, message in messages %}
+            <div class="alert alert-{{ category }}">
+                {{ message }}
+            </div>
+        {% endfor %}
+    {% endif %}
+{% endwith %}
