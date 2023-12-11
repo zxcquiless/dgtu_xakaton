@@ -97,6 +97,7 @@ def delete_item(id):
     current_language = session.get('language', 'ru')
 
     item = Item.query.get_or_404(id)
+    
     db.session.delete(item)
     db.session.commit()
     return redirect(url_for('data_table'))
